@@ -23,3 +23,10 @@ function driversByName(drivers) {
     return a.name.localeCompare(b.name);
   });
 }
+
+function totalRevenue(drivers) {
+  var initialValue = 0;
+  return drivers.reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue.revenue;
+  }, initialValue)
+}
