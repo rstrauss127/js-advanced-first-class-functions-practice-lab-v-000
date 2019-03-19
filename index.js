@@ -30,3 +30,7 @@ function totalRevenue(drivers) {
     return accumulator + currentValue.revenue;
   }, initialValue)
 }
+
+function averageRevenue(drivers) {
+  return totalRevenue(drivers)/drivers.length;
+}
